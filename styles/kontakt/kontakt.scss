@@ -9,6 +9,12 @@ body {
 	color: rgb(66, 56, 56);
 	line-height: 1.5;
 	position: relative;
+	
+	display: flex;
+	flex-direction: column;
+}
+.flex-1,.flex-2,footer{
+	flex: 1;
 }
 .logo{
     color: #09c372;
@@ -20,11 +26,11 @@ body {
 }
 nav{
     @import "../nav";
-    background-color: #3d4349;
+    background-color: #0b111a;
 }
 
 form {
-	background-color:#3d4349;
+	background-color:#0b111a;
 	padding: 20px;
 	border-radius: 12px;
 	margin-bottom: 30px;
@@ -32,7 +38,7 @@ form {
 #naslov {
 	text-align: center;
 	margin-bottom: 10px;
-	color:#15cf7e;
+	color:#09c372;
 }
 input[type="text"],
 .textarea,
@@ -60,7 +66,6 @@ input[type="email"] {
 	font-size: 0.85rem;
 	height: 1rem;
 }
-
 .popup {
 	position: fixed; /*kad user scrolla pratice ga i pravi ga inline*/
 	top: 50%;

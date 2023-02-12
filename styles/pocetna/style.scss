@@ -1,4 +1,8 @@
 @import "../global";
+body{
+    display: flex;
+    flex-direction: column;
+}
 header{
     background-color: #0b111a;
     color: white;
@@ -117,11 +121,4 @@ header{
     @import "../button";
 }
 
-footer{
-    background-color: #1F2937;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
+@import "../footer";

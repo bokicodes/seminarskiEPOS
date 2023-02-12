@@ -10,6 +10,12 @@ body {
   color: rgb(66, 56, 56);
   line-height: 1.5;
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-1, .flex-2, footer {
+  flex: 1;
 }
 
 .logo {
@@ -23,7 +29,7 @@ body {
 }
 
 nav {
-  background-color: #3d4349;
+  background-color: #0b111a;
 }
 nav .header-links {
   list-style: none;
@@ -51,7 +57,7 @@ nav .header-links a:hover {
 }
 
 form {
-  background-color: #3d4349;
+  background-color: #0b111a;
   padding: 20px;
   border-radius: 12px;
   margin-bottom: 30px;
@@ -60,7 +66,7 @@ form {
 #naslov {
   text-align: center;
   margin-bottom: 10px;
-  color: #15cf7e;
+  color: #09c372;
 }
 
 input[type=text],
