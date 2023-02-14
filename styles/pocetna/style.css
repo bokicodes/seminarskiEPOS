@@ -21,7 +21,6 @@ body {
 header {
   background-color: #0b111a;
   color: white;
-  padding: 30px;
   padding-bottom: 60px;
   flex: 1;
 }
@@ -44,7 +43,6 @@ header .header-links {
 }
 header .header-links .logo {
   margin-right: auto;
-  color: #38f658;
 }
 header .header-links .logo a {
   font-size: 30px;
