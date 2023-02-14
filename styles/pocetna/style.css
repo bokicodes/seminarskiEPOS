@@ -80,7 +80,7 @@ header .hero p {
 
 button {
   background-color: #38f658;
-  color: #000000;
+  color: #0b111a;
   font-weight: 900;
   border: none;
   padding: 10px 25px;
@@ -166,7 +166,7 @@ button:hover {
 }
 .action button {
   background-color: #38f658;
-  color: #000000;
+  color: #0b111a;
   font-weight: 900;
   border: none;
   padding: 10px 25px;

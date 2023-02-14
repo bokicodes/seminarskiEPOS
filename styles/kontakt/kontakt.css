@@ -88,7 +88,7 @@ input[type=email] {
 }
 .buttonCont button {
   background-color: #38f658;
-  color: #000000;
+  color: #0b111a;
   font-weight: 900;
   border: none;
   padding: 10px 25px;
@@ -156,6 +156,16 @@ input[type=email] {
 
 #popupDatum {
   display: inline;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
 }
 
 footer {

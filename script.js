@@ -12,11 +12,13 @@ contButton.addEventListener("click", e => {
   if(validateInputs()){
     document.getElementById("popupDatum").innerHTML = trenutniDatum.getDate() + "/" + (Number(trenutniDatum.getMonth())+1)  + "/" + trenutniDatum.getFullYear();
     document.getElementById("popup").style.display = "block";
+    document.getElementById("overlay").style.display = "inline";
   }
 });
 
 exitButton.addEventListener("click", e => {
   document.getElementById("popup").style.display = "none";
+  document.getElementById("overlay").style.display = "none";
   form.reset();
 });
 
