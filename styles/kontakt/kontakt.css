@@ -18,10 +18,6 @@ body {
   flex: 1;
 }
 
-.logo {
-  color: #09c372;
-}
-
 .form-container {
   width: 1100px;
   padding: 0;
@@ -30,6 +26,7 @@ body {
 
 nav {
   background-color: #0b111a;
+  color: white;
 }
 nav .header-links {
   list-style: none;
@@ -40,6 +37,8 @@ nav .header-links {
   padding: 10px 120px;
   cursor: pointer;
   text-decoration: none;
+  background-color: #0b111a;
+  color: white;
 }
 nav .header-links .logo {
   margin-right: auto;

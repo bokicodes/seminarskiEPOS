@@ -8,6 +8,7 @@ body {
   font-family: "Times New Roman", Times, serif;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 body {
@@ -36,6 +37,8 @@ header .header-links {
   padding: 10px 120px;
   cursor: pointer;
   text-decoration: none;
+  background-color: #0b111a;
+  color: white;
 }
 header .header-links .logo {
   margin-right: auto;

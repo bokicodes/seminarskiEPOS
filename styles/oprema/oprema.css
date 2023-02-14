@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav .header-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  padding: 10px 120px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #0b111a;
+  color: white;
+}
+nav .header-links .logo {
+  margin-right: auto;
+  color: #38f658;
+  font-size: 34px;
+  font-weight: 900;
+}
+nav .header-links a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #E5E7EB;
+}
+nav .header-links a:hover {
+  color: #38f658;
+}
+
+h2 {
+  text-align: center;
+  margin: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+section {
+  width: 1100px;
+  margin: 20px auto;
+}
+section .oprema {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 30px;
+  border-radius: 12px;
+}
+section .oprema .box {
+  box-shadow: 0 20px 30px 0 rgba(168, 168, 168, 0.07);
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #0b111a;
+}
+section .oprema .box .opis {
+  padding: 32px;
+}
+section .oprema .box .opis h3 {
+  text-align: center;
+  color: white;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+section .oprema .box .opis .cena {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+section .oprema .box .opis .cena strong {
+  color: white;
+}
+section .oprema .box .opis .cena button {
+  background-color: #38f658;
+  color: #000000;
+  font-weight: 900;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+section .oprema .box .opis .cena button:hover {
+  transform: scale(1.1);
+}
+section .oprema .box img {
+  width: 100%;
+  height: 200px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+footer {
+  background-color: #0b111a;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+}/*# sourceMappingURL=oprema.css.map */
