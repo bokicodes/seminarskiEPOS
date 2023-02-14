@@ -4,14 +4,19 @@
   box-sizing: border-box;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-size: 1.5rem;
-  font-family: "Inter", sans-serif;
-  color: rgb(66, 56, 56);
-  line-height: 1.5;
-  position: relative;
+  font-family: "Times New Roman", Times, serif;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  border-bottom: 3px solid #38f658;
 }
 
 .flex-1, .flex-2, footer {
@@ -21,20 +26,16 @@ body {
 .form-container {
   width: 1100px;
   padding: 0;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
-nav {
-  background-color: #0b111a;
-  color: white;
-}
 nav .header-links {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 30px;
   margin-bottom: 50px;
-  padding: 10px 120px;
+  padding: 20px 120px;
   cursor: pointer;
   text-decoration: none;
   background-color: #0b111a;
@@ -43,12 +44,14 @@ nav .header-links {
 nav .header-links .logo {
   margin-right: auto;
   color: #38f658;
-  font-size: 34px;
+}
+nav .header-links .logo a {
+  font-size: 30px;
   font-weight: 900;
 }
 nav .header-links a {
   text-decoration: none;
-  font-size: 24px;
+  font-size: 25px;
   color: #E5E7EB;
 }
 nav .header-links a:hover {
@@ -59,7 +62,7 @@ form {
   background-color: #0b111a;
   padding: 20px;
   border-radius: 12px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 #naslov {
@@ -153,4 +156,14 @@ input[type=email] {
 
 #popupDatum {
   display: inline;
+}
+
+footer {
+  background-color: #0b111a;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
 }/*# sourceMappingURL=kontakt.css.map */

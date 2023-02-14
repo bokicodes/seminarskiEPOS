@@ -3,35 +3,25 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-body {
-	font-size: 1.5rem;
-	font-family: "Inter", sans-serif;
-	color: rgb(66, 56, 56);
-	line-height: 1.5;
-	position: relative;
-	
-	display: flex;
-	flex-direction: column;
-}
+@import "../global";
+
 .flex-1,.flex-2,footer{
 	flex: 1;
 }
 .form-container {
     width: 1100px;
 	padding: 0;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 nav{
     @import "../nav";
-    background-color: #0b111a;
-	color: white;
 }
 
 form {
 	background-color:#0b111a;
 	padding: 20px;
 	border-radius: 12px;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 #naslov {
 	text-align: center;
@@ -102,3 +92,5 @@ input[type="email"] {
 #popupDatum {
 	display: inline;
 }
+
+@import "../footer";
