@@ -1,10 +1,15 @@
 @import "../global";
+@import "../funkcije";
+@import "../button";
+
+$pozadinaCrna : #0b111a;
+
 body{
     display: flex;
     flex-direction: column;
 }
 header{
-    background-color: #0b111a;
+    background-color: $pozadinaCrna;
     color: white;
     padding-bottom: 60px;
     flex: 1;
@@ -15,10 +20,8 @@ header{
     }
     @import "../nav";
     .hero{
-        display: flex;
+        @include Flexbox(center,space-between,row);
         gap: 30px;
-        align-items: center;
-        justify-content: space-between;
         padding: 10px 120px;
 
         h2{
@@ -36,7 +39,7 @@ header{
     }
 
 }
-@import "../button";
+
 .information{
     padding: 100px;
     padding-bottom: 150px;
@@ -60,8 +63,7 @@ header{
         border-radius: 12px;
     }
     .info-cards{
-        display: flex;
-        justify-content: center;
+        @include Flexbox(normal,center,row);
         gap: 60px;
     }
     .info1, .info2, .info3, .info4{
@@ -77,11 +79,7 @@ header{
     background-color: #E5E7EB;
     padding: 50px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    @include Flexbox(center,center,column);
     flex: 1;
 
     .quote{
@@ -105,9 +103,7 @@ header{
     border-radius: 8px;
     color: #F9FAF8;
 
-    display: flex;
-    justify-content: space-evenly;
-
+    @include Flexbox(normal,space-evenly,row);
     flex: 1;
 
     h4{

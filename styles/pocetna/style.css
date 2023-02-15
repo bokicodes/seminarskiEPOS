@@ -13,6 +13,20 @@ body {
   border-bottom: 3px solid #38f658;
 }
 
+button {
+  background-color: #38f658;
+  color: #0b111a;
+  font-weight: 900;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(1.1);
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -58,9 +72,10 @@ header .header-links a:hover {
 }
 header .hero {
   display: flex;
-  gap: 30px;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
+  gap: 30px;
   padding: 10px 120px;
 }
 header .hero h2 {
@@ -74,20 +89,6 @@ header .hero p {
   color: #E5E7EB;
   margin-bottom: 30px;
   max-width: 600px;
-}
-
-button {
-  background-color: #38f658;
-  color: #0b111a;
-  font-weight: 900;
-  border: none;
-  padding: 10px 25px;
-  border-radius: 8px;
-  font-size: 18px;
-  cursor: pointer;
-}
-button:hover {
-  transform: scale(1.1);
 }
 
 .information {
@@ -113,7 +114,9 @@ button:hover {
 }
 .information .info-cards {
   display: flex;
+  align-items: normal;
   justify-content: center;
+  flex-direction: row;
   gap: 60px;
 }
 .information .info1, .information .info2, .information .info3, .information .info4 {
@@ -127,9 +130,9 @@ button:hover {
   background-color: #E5E7EB;
   padding: 50px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   flex: 1;
 }
 .testimonial .quote {
@@ -152,7 +155,9 @@ button:hover {
   border-radius: 8px;
   color: #F9FAF8;
   display: flex;
+  align-items: normal;
   justify-content: space-evenly;
+  flex-direction: row;
   flex: 1;
 }
 .action h4 {
