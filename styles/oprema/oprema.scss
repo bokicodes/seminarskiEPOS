@@ -1,7 +1,10 @@
 @import "../global";
+@import "../funkcije";
+
+$pozadinaCrna : #0b111a;
+
 nav{
-    @import "../nav";
-    
+    @import "../nav";  
 }
 h2{
     text-align: center;
@@ -22,10 +25,9 @@ section{
         border-radius: 12px;
 
         .box{
-            box-shadow: 0 20px 30px 0 rgba(168, 168, 168, 0.07);
             border-radius: 12px;
             padding: 20px;
-            background-color: #0b111a;
+            background-color: $pozadinaCrna;
             
             .opis{
                 padding: 32px;
@@ -38,9 +40,7 @@ section{
                 }
 
                 .cena{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
+                    @include Flexbox(center,space-between,row);
                     font-size: 20px;
 
                     strong{
