@@ -132,7 +132,7 @@ nav .header-links a:hover {
 .popup .popup-body {
   padding: 10px 15px;
 }
-.popup .popup-body #popupDatum {
+.popup .popup-body .datum {
   display: inline;
 }
 

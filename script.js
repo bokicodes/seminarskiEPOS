@@ -10,7 +10,7 @@ trenutniDatum = new Date();
 /* -------------- REGISTRACIJA --------------------*/ 
 contButton.addEventListener("click", e => {
   if(validateInputs()){
-    document.getElementById("popupDatum").innerHTML = trenutniDatum.getDate() + "/" + (Number(trenutniDatum.getMonth())+1)  + "/" + trenutniDatum.getFullYear();
+    document.getElementById("popupDatum").innerHTML += trenutniDatum.getDate() + "/" + (Number(trenutniDatum.getMonth())+1)  + "/" + trenutniDatum.getFullYear();
     document.getElementById("popup").style.display = "block";
     document.getElementById("overlay").style.display = "inline";
   }
