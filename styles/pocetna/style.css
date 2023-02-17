@@ -43,31 +43,38 @@ header img {
   height: 500px;
   border-radius: 6px;
 }
-header .header-links {
+header nav {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+}
+header nav .header-links {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 30px;
   margin-bottom: 50px;
-  padding: 20px 120px;
+  padding: 15px 120px;
   cursor: pointer;
   text-decoration: none;
   background-color: #0b111a;
   color: white;
+  width: 100%;
 }
-header .header-links .logo {
+header nav .header-links .logo {
   margin-right: auto;
 }
-header .header-links .logo a {
+header nav .header-links .logo a {
   font-size: 30px;
   font-weight: 900;
 }
-header .header-links a {
+header nav .header-links a {
   text-decoration: none;
   font-size: 25px;
   color: #E5E7EB;
 }
-header .header-links a:hover {
+header nav .header-links a:hover {
   color: #38f658;
 }
 header .hero {
@@ -184,11 +191,11 @@ header .hero p {
 }
 
 footer {
-  background-color: #0b111a;
   padding: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 1rem;
+  text-align: center;
+  color: rgba(11, 17, 26, 0.7);
+  font-size: 1.2rem;
+  font-weight: bold;
+  bottom: 0;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

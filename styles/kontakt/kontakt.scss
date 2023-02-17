@@ -3,15 +3,15 @@
 
 $pozadinaCrna : #0b111a;
 
-nav{
-    @import "../nav";
-	flex-grow: 1;
-}
+@import "../nav";
 
 .form-container {
     width: 1100px;
 	padding: 0;
-    margin: 20px auto;
+    margin-top: 120px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
 	flex-grow: 1;
 
 	form {
