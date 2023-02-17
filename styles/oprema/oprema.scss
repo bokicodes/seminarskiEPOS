@@ -36,12 +36,13 @@ section{
                     text-align: center;
                     color: white;
                     margin-bottom: 25px;
-                    font-size: 20px;
+                    font-size: 23px;
+                    line-height: 1.3;
                 }
 
                 .cena{
                     @include Flexbox(center,space-between,row);
-                    font-size: 20px;
+                    font-size: 22px;
 
                     strong{
                         color: white;
@@ -52,7 +53,7 @@ section{
             }
             img{
                 width: 100%;
-                height: 200px;
+                height: auto;
                 border-radius: 10px;
               }
         }
