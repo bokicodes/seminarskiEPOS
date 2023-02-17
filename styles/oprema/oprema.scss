@@ -4,13 +4,18 @@
 
 $pozadinaCrna : #0b111a;
 
-h2{
-    text-align: center;
+.naslov{
     margin-top: 120px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 32px;
-    flex-grow: 1;
+    flex: 1;
+    h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 32px;
+        width: 100%;
+    }
 }
 section{
     width: 1100px;
@@ -61,3 +66,59 @@ section{
 }
 
 @import "../footer";
+
+
+@media screen and (max-width: 768px) {
+    section{
+        .oprema{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(6,1fr);
+
+            .box{
+                .opis{
+                    h3{
+                        font-size: 33px;
+                    }
+                    .cena{
+                        font-size: 30px;
+
+                        button{
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 652px){
+    .naslov{
+        h2{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 495px){
+    section{
+        .oprema{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(12,1fr);
+
+            .box{
+                .opis{
+                    h3{
+                        font-size: 60px;
+                    }
+                    .cena{
+                        font-size: 50px;
+
+                        button{
+                            font-size: 45px;
+                            padding: 20px 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

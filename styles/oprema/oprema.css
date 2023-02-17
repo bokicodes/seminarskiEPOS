@@ -48,13 +48,18 @@ nav .header-links a:hover {
   color: #38f658;
 }
 
-h2 {
-  text-align: center;
+.naslov {
   margin-top: 120px;
+  flex: 1;
+}
+.naslov h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 32px;
-  flex-grow: 1;
+  width: 100%;
 }
 
 section {
@@ -122,4 +127,41 @@ footer {
   font-weight: bold;
   bottom: 0;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  section .oprema {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  section .oprema .box .opis h3 {
+    font-size: 33px;
+  }
+  section .oprema .box .opis .cena {
+    font-size: 30px;
+  }
+  section .oprema .box .opis .cena button {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 652px) {
+  .naslov h2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 495px) {
+  section .oprema {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+  section .oprema .box .opis h3 {
+    font-size: 60px;
+  }
+  section .oprema .box .opis .cena {
+    font-size: 50px;
+  }
+  section .oprema .box .opis .cena button {
+    font-size: 45px;
+    padding: 20px 30px;
+  }
 }/*# sourceMappingURL=oprema.css.map */
