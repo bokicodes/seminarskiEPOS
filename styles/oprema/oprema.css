@@ -47,11 +47,13 @@ h2 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 32px;
+  flex-grow: 1;
 }
 
 section {
   width: 1100px;
   margin: 20px auto;
+  flex-grow: 1;
 }
 section .oprema {
   display: grid;
