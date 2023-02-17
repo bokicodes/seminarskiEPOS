@@ -27,11 +27,6 @@ button:hover {
   transform: scale(1.1);
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 header {
   background-color: #0b111a;
   color: white;
