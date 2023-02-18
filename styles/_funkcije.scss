@@ -4,3 +4,9 @@
     justify-content: $jc;
     flex-direction: $direction;
 }
+
+@mixin Grid($kol, $red){
+    display: grid;
+    grid-template-columns: repeat($kol,1fr);
+    grid-template-rows: repeat($red,1fr);
+}
