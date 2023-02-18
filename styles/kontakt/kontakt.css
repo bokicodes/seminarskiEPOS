@@ -26,7 +26,6 @@ nav .header-links {
   gap: 30px;
   margin-bottom: 50px;
   padding: 15px 120px;
-  cursor: pointer;
   text-decoration: none;
   background-color: #0b111a;
   color: white;
@@ -38,8 +37,10 @@ nav .header-links .logo {
 nav .header-links .logo a {
   font-size: 30px;
   font-weight: 900;
+  cursor: pointer;
 }
 nav .header-links a {
+  cursor: pointer;
   text-decoration: none;
   font-size: 25px;
   color: #E5E7EB;

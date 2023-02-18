@@ -10,7 +10,6 @@ nav{
         gap: 30px;
         margin-bottom: 50px;
         padding: 15px 120px;
-        cursor: pointer; 
         text-decoration: none;
         background-color: #0b111a;
         color: white;
@@ -21,9 +20,11 @@ nav{
             a{
                 font-size: 30px;
                 font-weight: 900;
+                cursor: pointer;
             }
          }
          a{
+            cursor: pointer;
             text-decoration: none;
             font-size: 25px;
             color: #E5E7EB;
