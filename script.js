@@ -17,6 +17,7 @@ contButton.addEventListener("click", e => {
 });
 
 exitButton.addEventListener("click", e => {
+  document.getElementById("popupDatum").innerHTML = "Komentar poslat datuma: ";
   document.getElementById("popup").style.display = "none";
   document.getElementById("overlay").style.display = "none";
   form.reset();
