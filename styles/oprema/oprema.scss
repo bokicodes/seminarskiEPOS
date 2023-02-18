@@ -4,26 +4,16 @@
 
 $pozadinaCrna : #0b111a;
 
-.naslov{
-    margin-top: 120px;
-    flex: 1;
-    h2{
-        @include Flexbox(center,center);
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 32px;
-        width: 100%;
-    }
-}
 section{
     width: 1100px;
     margin: 20px auto;
-    flex-grow: 1;
     .oprema{
         @include Grid(3,4);
         gap: 50px;
         padding: 30px;
         border-radius: 12px;
+        margin-top: 50px;
+        flex-grow: 1;
 
         .box{
             border-radius: 12px;

@@ -48,32 +48,19 @@ nav .header-links a:hover {
   color: #38f658;
 }
 
-.naslov {
-  margin-top: 120px;
-  flex: 1;
-}
-.naslov h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 32px;
-  width: 100%;
-}
-
 section {
   width: 1100px;
   margin: 20px auto;
-  flex-grow: 1;
 }
 section .oprema {
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 50px;
   padding: 30px;
   border-radius: 12px;
+  margin-top: 50px;
+  flex-grow: 1;
 }
 section .oprema .box {
   border-radius: 12px;
@@ -125,12 +112,12 @@ footer {
   color: rgba(11, 17, 26, 0.7);
   font-size: 1.2rem;
   font-weight: bold;
-  bottom: 0;
   width: 100%;
 }
 
 @media screen and (max-width: 768px) {
   section .oprema {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
   }
@@ -151,6 +138,7 @@ footer {
 }
 @media screen and (max-width: 495px) {
   section .oprema {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(12, 1fr);
   }
