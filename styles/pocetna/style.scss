@@ -1,30 +1,35 @@
 @import "../global";
 @import "../funkcije";
 @import "../button";
+@import "../nav";
 
 $pozadinaCrna : #0b111a;
 
-header{
+.hero{
+    border-left: 2px dotted #38f658;
+    border-right: 2px dotted #38f658;
+    border-radius: 5px;
+    margin-top: 100px;
     background-color: $pozadinaCrna;
     color: white;
-    padding-bottom: 60px;
-    flex-grow: 1;
+    flex: 1;
+    @include Flexbox(center,space-evenly,row);
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
     img{
-        width: 420px;
-        height: 500px;
-        border-radius: 6px;
-    }
-    @import "../nav";
-    .hero{
-        @include Flexbox(center,space-between,row);
-        gap: 30px;
-        padding: 10px 120px;
-
+            width: auto;
+            height: 350px;
+            border-radius: 6px;
+        }
+    .hero-text{
+        @include Flexbox(center,center,column);
         h2{
             font-size: 48px;
             font-weight: 900;
             color: #F9FAF8;
             margin-bottom: 30px;
+            text-align: center;
         }
         p{
             font-size: 20px;
@@ -33,16 +38,15 @@ header{
             color: #E5E7EB;
             margin-bottom: 30px;
             max-width: 600px;
+            text-align: center;
         }
     }
-
 }
 
 .information{
-    padding: 100px;
-    padding-bottom: 150px;
-
-    flex-grow: 1;
+    
+    margin: 40px 0;
+    flex: 1;
     
     h3{
         font-size: 36px;
@@ -62,14 +66,13 @@ header{
     }
     .info-cards{
         @include Flexbox(normal,center,row);
-        gap: 60px;
+        flex-wrap: wrap;
+        gap: 40px;
     }
     .info1, .info2, .info3, .info4{
-        display: flex;
-        flex-direction: column;
+        @include Flexbox(center,center,column);
         gap: 20px;
         flex-wrap: wrap;
-    
     }
 }
 
@@ -78,31 +81,33 @@ header{
     padding: 50px;
 
     @include Flexbox(center,center,column);
-    flex-grow: 1;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex: 1;
 
     .quote{
         font-size: 36px;
         font-style: italic;
         font-weight: lighter;
         color: rgba(31, 41, 55, 0.7);
-        margin: 30px 130px;
     }
     .author{
         font-size: 24px;
         align-self: flex-end;
-        margin-right: 130px;
     }
 }
 
 .action{
-    margin: 70px 100px;
+    margin: 30px;
     background-color: #1F2937;
-    padding: 50px 0;
+    padding: 50px;
     border-radius: 8px;
     color: #F9FAF8;
 
-    @include Flexbox(normal,space-evenly,row);
-    flex-grow: 1;
+    @include Flexbox(center,space-around,row);
+    gap: 20px;
+    flex-wrap: wrap;
+    flex: 1;
 
     h4{
         font-size: 24px;
@@ -115,3 +120,49 @@ header{
 }
 
 @import "../footer";
+
+@media screen and (max-width: 793px) {
+	nav{
+		.header-links{
+			gap: 20px;
+			.logo{
+				a{
+					font-size: 0.9em;
+				}
+			}
+			a{
+				font-size: 0.8em;
+			}
+		}
+	}
+}
+@media screen and (max-width: 528px) {
+	nav{
+		.header-links{
+			gap: 15px;
+			.logo{
+				a{
+					font-size: 0.8em;
+				}
+			}
+			a{
+				font-size: 0.7em;
+			}
+		}
+	}
+}
+@media screen and (max-width: 483px) {
+	nav{
+		.header-links{
+			gap: 10px;
+			.logo{
+				a{
+					font-size: 0.6em;
+				}
+			}
+			a{
+				font-size: 0.5em;
+			}
+		}
+	}
+}
