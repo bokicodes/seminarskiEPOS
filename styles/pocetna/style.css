@@ -50,7 +50,7 @@ header nav .header-links {
   align-items: center;
   gap: 30px;
   margin-bottom: 50px;
-  padding: 15px 120px;
+  padding: 20px 40px;
   text-decoration: none;
   background-color: #0b111a;
   color: white;
@@ -60,14 +60,14 @@ header nav .header-links .logo {
   margin-right: auto;
 }
 header nav .header-links .logo a {
-  font-size: 30px;
+  font-size: 1.1em;
   font-weight: 900;
   cursor: pointer;
 }
 header nav .header-links a {
   cursor: pointer;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1em;
   color: #E5E7EB;
 }
 header nav .header-links a:hover {

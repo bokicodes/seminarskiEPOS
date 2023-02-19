@@ -9,7 +9,7 @@ nav{
         align-items: center;
         gap: 30px;
         margin-bottom: 50px;
-        padding: 15px 120px;
+        padding: 20px 40px;
         text-decoration: none;
         background-color: #0b111a;
         color: white;
@@ -18,7 +18,7 @@ nav{
             margin-right: auto;
     
             a{
-                font-size: 30px;
+                font-size: 1.1em;
                 font-weight: 900;
                 cursor: pointer;
             }
@@ -26,7 +26,7 @@ nav{
          a{
             cursor: pointer;
             text-decoration: none;
-            font-size: 25px;
+            font-size: 1em;
             color: #E5E7EB;
             &:hover{
                 color: #38f658;
