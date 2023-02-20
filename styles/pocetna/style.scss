@@ -120,48 +120,4 @@ $pozadinaCrna : #0b111a;
 
 @import "../footer";
 
-@media screen and (max-width: 793px) {
-	nav{
-		.header-links{
-			gap: 20px;
-			.logo{
-				a{
-					font-size: 0.9em;
-				}
-			}
-			a{
-				font-size: 0.8em;
-			}
-		}
-	}
-}
-@media screen and (max-width: 528px) {
-	nav{
-		.header-links{
-			gap: 15px;
-			.logo{
-				a{
-					font-size: 0.8em;
-				}
-			}
-			a{
-				font-size: 0.7em;
-			}
-		}
-	}
-}
-@media screen and (max-width: 483px) {
-	nav{
-		.header-links{
-			gap: 10px;
-			.logo{
-				a{
-					font-size: 0.6em;
-				}
-			}
-			a{
-				font-size: 0.5em;
-			}
-		}
-	}
-}
+@import "../responsiveNav";
