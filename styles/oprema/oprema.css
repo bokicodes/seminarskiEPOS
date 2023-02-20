@@ -50,7 +50,9 @@ nav .header-links a:hover {
 }
 
 section {
-  margin: 100px auto;
+  margin: 0 auto;
+  margin-top: 100px;
+  flex: 1;
 }
 section .oprema {
   max-width: 1100px;
@@ -60,7 +62,6 @@ section .oprema {
   gap: 50px;
   padding: 30px;
   border-radius: 12px;
-  flex: 1;
 }
 section .oprema .box {
   width: 100%;
