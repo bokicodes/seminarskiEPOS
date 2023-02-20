@@ -5,35 +5,36 @@
 $pozadinaCrna : #0b111a;
 
 section{
-    width: 1100px;
-    margin: 20px auto;
+    margin: 100px auto;
     .oprema{
+        max-width: 1100px;
         @include Grid(3,4);
         gap: 50px;
         padding: 30px;
         border-radius: 12px;
-        margin-top: 50px;
-        flex-grow: 1;
+        flex: 1;
 
         .box{
+            width: 100%;
+            height: auto;
             border-radius: 12px;
             padding: 20px;
             background-color: $pozadinaCrna;
-            
             .opis{
-                padding: 32px;
+                padding: 25px;
                 
                 h3{
                     text-align: center;
                     color: white;
                     margin-bottom: 25px;
-                    font-size: 23px;
+                    font-size: 26px;
                     line-height: 1.3;
                 }
 
                 .cena{
                     @include Flexbox(center,space-between,row);
                     font-size: 22px;
+                    gap: 15px;
 
                     strong{
                         color: white;
@@ -62,13 +63,13 @@ section{
             .box{
                 .opis{
                     h3{
-                        font-size: 33px;
+                        font-size: 22px;
                     }
                     .cena{
-                        font-size: 30px;
+                        font-size: 20px;
 
                         button{
-                            font-size: 25px;
+                            font-size: 22px;
                         }
                     }
                 }
@@ -84,18 +85,63 @@ section{
             .box{
                 .opis{
                     h3{
-                        font-size: 60px;
+                        font-size: 20px;
                     }
                     .cena{
-                        font-size: 50px;
+                        font-size: 20px;
 
                         button{
-                            font-size: 45px;
-                            padding: 20px 30px;
+                            font-size: 20px;
                         }
                     }
                 }
             }
         }
     }
+}
+
+@media screen and (max-width: 793px) {
+	nav{
+		.header-links{
+			gap: 20px;
+			.logo{
+				a{
+					font-size: 0.9em;
+				}
+			}
+			a{
+				font-size: 0.8em;
+			}
+		}
+	}
+}
+@media screen and (max-width: 528px) {
+	nav{
+		.header-links{
+			gap: 15px;
+			.logo{
+				a{
+					font-size: 0.8em;
+				}
+			}
+			a{
+				font-size: 0.7em;
+			}
+		}
+	}
+}
+@media screen and (max-width: 483px) {
+	nav{
+		.header-links{
+			gap: 10px;
+			.logo{
+				a{
+					font-size: 0.6em;
+				}
+			}
+			a{
+				font-size: 0.5em;
+			}
+		}
+	}
 }

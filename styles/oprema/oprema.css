@@ -50,32 +50,33 @@ nav .header-links a:hover {
 }
 
 section {
-  width: 1100px;
-  margin: 20px auto;
+  margin: 100px auto;
 }
 section .oprema {
+  max-width: 1100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
   gap: 50px;
   padding: 30px;
   border-radius: 12px;
-  margin-top: 50px;
-  flex-grow: 1;
+  flex: 1;
 }
 section .oprema .box {
+  width: 100%;
+  height: auto;
   border-radius: 12px;
   padding: 20px;
   background-color: #0b111a;
 }
 section .oprema .box .opis {
-  padding: 32px;
+  padding: 25px;
 }
 section .oprema .box .opis h3 {
   text-align: center;
   color: white;
   margin-bottom: 25px;
-  font-size: 23px;
+  font-size: 26px;
   line-height: 1.3;
 }
 section .oprema .box .opis .cena {
@@ -84,6 +85,7 @@ section .oprema .box .opis .cena {
   justify-content: space-between;
   flex-direction: row;
   font-size: 22px;
+  gap: 15px;
 }
 section .oprema .box .opis .cena strong {
   color: white;
@@ -123,13 +125,13 @@ footer {
     grid-template-rows: repeat(6, 1fr);
   }
   section .oprema .box .opis h3 {
-    font-size: 33px;
+    font-size: 22px;
   }
   section .oprema .box .opis .cena {
-    font-size: 30px;
+    font-size: 20px;
   }
   section .oprema .box .opis .cena button {
-    font-size: 25px;
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 495px) {
@@ -139,13 +141,45 @@ footer {
     grid-template-rows: repeat(12, 1fr);
   }
   section .oprema .box .opis h3 {
-    font-size: 60px;
+    font-size: 20px;
   }
   section .oprema .box .opis .cena {
-    font-size: 50px;
+    font-size: 20px;
   }
   section .oprema .box .opis .cena button {
-    font-size: 45px;
-    padding: 20px 30px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 793px) {
+  nav .header-links {
+    gap: 20px;
+  }
+  nav .header-links .logo a {
+    font-size: 0.9em;
+  }
+  nav .header-links a {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 528px) {
+  nav .header-links {
+    gap: 15px;
+  }
+  nav .header-links .logo a {
+    font-size: 0.8em;
+  }
+  nav .header-links a {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 483px) {
+  nav .header-links {
+    gap: 10px;
+  }
+  nav .header-links .logo a {
+    font-size: 0.6em;
+  }
+  nav .header-links a {
+    font-size: 0.5em;
   }
 }/*# sourceMappingURL=oprema.css.map */
